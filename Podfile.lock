@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.5.0)
+  - String+Extensions (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - String+Extensions
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  String+Extensions: 4c13e40b64fcfc079f93cd94160e38b576948348
+
+PODFILE CHECKSUM: 98314d59ba123df858dfa85ad86d25681f3003d5
+
+COCOAPODS: 1.2.1
