@@ -7,5 +7,6 @@ target 'WeatherTest' do
 
   pod ‘Alamofire’
   pod ‘String+Extensions’
-
+  pod ‘Material’, ‘< 2.6.4’
+  pod ‘DropDown’
 end

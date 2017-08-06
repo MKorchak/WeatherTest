@@ -9,6 +9,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DropDown.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material-com.cosmicmind.material.fonts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material-com.cosmicmind.material.icons.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-WeatherTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1D3C2EF0C19B9F09892FED642A9DD4ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30BA546FE11C683FBCA8DDEEB5DE5053</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39AA3FC7447AC6B6A131668CFF9C01CD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A5897FCD2621886E495618AB901B1EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5168099F2EBFC99A707C03C9EADE01A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ADAEF89C6AB7ECAC26BC06792BCF3FAC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FE10D80EEE4020DECB8741973157A8F2</key>
+		<key>8D511562A8961C5B7A5DD87BAE2374F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

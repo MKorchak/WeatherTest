@@ -15,6 +15,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initialConfig()
+    }
+    
+    private func initialConfig() {
         self.weatherRequest = WeatherRequest(delegate: self)
         self.weatherParser = WeatherParser(delegate: self)
         self.weatherRequest.getWeather(forStation: Constants.Stations.aberporth)
@@ -26,7 +30,9 @@ class ViewController: UIViewController {
 
 extension ViewController: WeatherRequestDelegate {
     func handleRequestResponse(response: String) {
-        self.weatherParser.parseWeather(from: response)
+        OperationQueue().addOperation() {
+            self.weatherParser.parseWeather(from: response)
+        }
     }
     
     func handleRequestError() {
