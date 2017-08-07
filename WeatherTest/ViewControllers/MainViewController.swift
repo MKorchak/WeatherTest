@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Material
 
-class ViewController: UIViewController {
+class MainViewController: PageTabBarController, PageTabBarControllerDelegate {
     
     private var weatherRequest: WeatherRequest!
     fileprivate var weatherParser: WeatherParser!
@@ -22,31 +23,35 @@ class ViewController: UIViewController {
         self.weatherRequest = WeatherRequest(delegate: self)
         self.weatherParser = WeatherParser(delegate: self)
         self.weatherRequest.getWeather(forStation: Constants.Stations.aberporth)
-        self.weatherRequest.getWeather(forStation: Constants.Stations.armagh)
-        self.weatherRequest.getWeather(forStation: "sdfgfds")
+//        self.weatherRequest.getWeather(forStation: Constants.Stations.armagh)
+//        self.weatherRequest.getWeather(forStation: "sdfgfds")
     }
 
 }
 
-extension ViewController: WeatherRequestDelegate {
+extension MainViewController: WeatherRequestDelegate {
     func handleRequestResponse(response: String) {
-        OperationQueue().addOperation() {
+        DispatchQueue.global(qos: .background).sync {
             self.weatherParser.parseWeather(from: response)
         }
     }
     
     func handleRequestError() {
         print("error")
+//        self.indicator.stopAnimating()
+//        self.indicator.isHidden = true
     }
 }
 
-extension ViewController: WeatherParserDelegate {
+extension MainViewController: WeatherParserDelegate {
     func handleParsedResult(model: WeatherModel) {
         print(model)
+//        self.indicator.stopAnimating()
+//        self.indicator.isHidden = true
     }
     
     func handleParsingError() {
-        
+
     }
 }
 
