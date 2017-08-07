@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window!.rootViewController = MainViewController(viewControllers: [mapViewController, weatherListViewController], selectedIndex: 0)
         window!.makeKeyAndVisible()
+        //DropDown.startListeningToKeyboard()
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

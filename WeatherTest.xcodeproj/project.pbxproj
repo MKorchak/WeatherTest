@@ -22,6 +22,8 @@
 		3ECDBF371F37D0A600C5ED51 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBF361F37D0A600C5ED51 /* UIView + Extensions.swift */; };
 		3ECDBF3A1F37D4CE00C5ED51 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECDBF391F37D4CE00C5ED51 /* HeaderView.xib */; };
 		3ECDBF3C1F37D69600C5ED51 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBF3B1F37D69600C5ED51 /* HeaderView.swift */; };
+		3ECDBF3E1F38470500C5ED51 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBF3D1F38470500C5ED51 /* MainNavigationController.swift */; };
+		3ECDBF401F38472000C5ED51 /* WeatherListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBF3F1F38472000C5ED51 /* WeatherListCell.swift */; };
 		3EF6030C1F361E04005EED8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6030A1F361E04005EED8F /* Main.storyboard */; };
 		3EF603111F361E04005EED8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EF603101F361E04005EED8F /* Assets.xcassets */; };
 		3EF603141F361E04005EED8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF603121F361E04005EED8F /* LaunchScreen.storyboard */; };
@@ -48,6 +50,8 @@
 		3ECDBF361F37D0A600C5ED51 /* UIView + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		3ECDBF391F37D4CE00C5ED51 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		3ECDBF3B1F37D69600C5ED51 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3ECDBF3D1F38470500C5ED51 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		3ECDBF3F1F38472000C5ED51 /* WeatherListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListCell.swift; sourceTree = "<group>"; };
 		3EF603031F361E04005EED8F /* WeatherTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF6030B1F361E04005EED8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EF603101F361E04005EED8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				3ECDBF1C1F37C28900C5ED51 /* MainViewController.swift */,
 				3ECDBF301F37CAB000C5ED51 /* MapViewController */,
 				3ECDBF311F37CAB000C5ED51 /* WeatherListViewController */,
+				3ECDBF3D1F38470500C5ED51 /* MainNavigationController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				3ECDBF341F37CADB00C5ED51 /* WeatherListViewController.swift */,
+				3ECDBF3F1F38472000C5ED51 /* WeatherListCell.swift */,
 			);
 			path = WeatherListViewController;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECDBF3E1F38470500C5ED51 /* MainNavigationController.swift in Sources */,
 				3ECDBF331F37CAC600C5ED51 /* MapViewController.swift in Sources */,
 				3ECDBF251F37C50000C5ED51 /* AppDelegate.swift in Sources */,
 				3ECDBF261F37C50000C5ED51 /* Constants.swift in Sources */,
@@ -339,6 +346,7 @@
 				3ECDBF371F37D0A600C5ED51 /* UIView + Extensions.swift in Sources */,
 				3ECDBF2B1F37C50000C5ED51 /* LocationModel.swift in Sources */,
 				3ECDBF351F37CADB00C5ED51 /* WeatherListViewController.swift in Sources */,
+				3ECDBF401F38472000C5ED51 /* WeatherListCell.swift in Sources */,
 				3ECDBF2C1F37C50000C5ED51 /* MonthModel.swift in Sources */,
 				3ECDBF2D1F37C50000C5ED51 /* YearModel.swift in Sources */,
 				3ECDBF3C1F37D69600C5ED51 /* HeaderView.swift in Sources */,
