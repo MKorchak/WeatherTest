@@ -19,7 +19,7 @@ extension UIView {
         self.layer.addSublayer(gradientLayer)
     }
     
-    private func makeBlur() {
+    func makeBlur() {
         if !UIAccessibilityIsReduceTransparencyEnabled() {
             self.backgroundColor = UIColor.clear
             

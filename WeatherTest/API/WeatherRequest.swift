@@ -14,6 +14,12 @@ protocol WeatherRequestDelegate {
     func handleRequestError()
 }
 
+extension WeatherRequestDelegate where Self: UIViewController {
+    func handleRequestError() {
+        self.presentErrorController(title: "Error", message: "In request")
+    }
+}
+
 struct WeatherRequest {
     
     private var delegate: WeatherRequestDelegate

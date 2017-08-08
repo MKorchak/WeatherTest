@@ -19,4 +19,11 @@ struct Constants {
         static let ballypatrickForest = "ballypatrickdata"
         static let bradford = "bradforddata"
     }
+    
+    struct StationsNames {
+        static let armagh = "Armagh"
+        static let aberporth = "Aberporth"
+        static let ballypatrickForest = "Ballypatrick Forest"
+        static let bradford = "Bradford"
+    }
 }

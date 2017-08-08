@@ -14,6 +14,12 @@ protocol WeatherParserDelegate {
     func handleParsingError()
 }
 
+extension WeatherParserDelegate where Self: UIViewController {    
+    func handleParsingError() {
+        self.presentErrorController(title: "Error", message: "In parsing")
+    }
+}
+
 struct WeatherParser {
     private var delegate: WeatherParserDelegate
     
@@ -22,16 +28,10 @@ struct WeatherParser {
     }
     
     func parseWeather(from data: String) {
-        guard let location = self.getLocation(weatherData: data) else {
-            self.delegate.handleParsingError()
-            return
-        }
-        guard let city = self.getCity(data: data) else {
-            self.delegate.handleParsingError()
-            return
-        }
         let years = self.getYearsArray(data: data)
-        guard !years.isEmpty else {
+        guard let location = self.getLocation(weatherData: data),
+            let city = self.getCity(data: data),
+            !years.isEmpty else {
             self.delegate.handleParsingError()
             return
         }

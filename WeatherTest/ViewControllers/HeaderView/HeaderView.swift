@@ -17,9 +17,22 @@ class HeaderView: UIView {
     @IBOutlet weak var stationView: UIView!
     
     private let dropDown = DropDown()
-    var dropDownDataSource: [String] = []
+    var dropDownDataSource: [String] = [] {
+        didSet {
+            guard !dropDownDataSource.isEmpty else {
+                return
+            }
+            self.dropDown.dataSource = dropDownDataSource
+            self.stationLabel.text = dropDownDataSource[0]
+        }
+    }
     
     var cityChangedBlock: ((_ city: String) -> Swift.Void)? = nil
+    
+    override func awakeFromNib() {
+        self.stationView.makeBlur()
+        self.prepareDropDown()
+    }
     
     static func instanceFromNib() -> UIView {
         return UINib(nibName: "HeaderView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
@@ -45,15 +58,9 @@ class HeaderView: UIView {
         dropDown.anchorView = stationLabel
         dropDown.direction = .any
         dropDown.dismissMode = .onTap
-        //cityDropDown.show()
-        dropDown.cancelAction = { [weak self] in
-            guard let strongSelf = self else { return }
-            strongSelf.arrowImageView.image = UIImage(named: "Arrow Down")
-        }
         dropDown.selectionAction = { [weak self] (index, item) in
             guard let strongSelf = self else { return }
             strongSelf.stationLabel.text = item
-            strongSelf.arrowImageView.image = UIImage(named: "Arrow Down")
             strongSelf.cityChangedBlock.map({ $0(item) })
         }
     }
