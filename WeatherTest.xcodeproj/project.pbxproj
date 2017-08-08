@@ -14,6 +14,9 @@
 		3E59D1431F39075400271D03 /* WeatherTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBF181F37C28900C5ED51 /* WeatherTest.xcdatamodeld */; };
 		3E59D1451F39081A00271D03 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E59D1441F39081A00271D03 /* MapKit.framework */; };
 		3E59D1491F39184300271D03 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E59D1481F39184300271D03 /* GlobalFunctions.swift */; };
+		3E59D14C1F3991C500271D03 /* SectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E59D14B1F3991C500271D03 /* SectionView.xib */; };
+		3E59D14E1F39928700271D03 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E59D14D1F39928700271D03 /* SectionView.swift */; };
+		3E59D1501F39941300271D03 /* UITableView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E59D14F1F39941300271D03 /* UITableView + Extensions.swift */; };
 		3ECDBF251F37C50000C5ED51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBF141F37C28900C5ED51 /* AppDelegate.swift */; };
 		3ECDBF261F37C50000C5ED51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBF151F37C28900C5ED51 /* Constants.swift */; };
 		3ECDBF271F37C50000C5ED51 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBF1C1F37C28900C5ED51 /* MainViewController.swift */; };
@@ -45,6 +48,9 @@
 		3E59D11D1F39013900271D03 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		3E59D1441F39081A00271D03 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3E59D1481F39184300271D03 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		3E59D14B1F3991C500271D03 /* SectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionView.xib; sourceTree = "<group>"; };
+		3E59D14D1F39928700271D03 /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		3E59D14F1F39941300271D03 /* UITableView + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView + Extensions.swift"; sourceTree = "<group>"; };
 		3ECDBF0F1F37965100C5ED51 /* MonthModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthModel.swift; sourceTree = "<group>"; };
 		3ECDBF111F37985F00C5ED51 /* YearModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearModel.swift; sourceTree = "<group>"; };
 		3ECDBF141F37C28900C5ED51 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,15 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		3E59D14A1F3991B600271D03 /* SectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3E59D14B1F3991C500271D03 /* SectionView.xib */,
+				3E59D14D1F39928700271D03 /* SectionView.swift */,
+			);
+			path = SectionView;
+			sourceTree = "<group>";
+		};
 		3ECDBF131F37C28900C5ED51 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +141,7 @@
 				3ECDBF361F37D0A600C5ED51 /* UIView + Extensions.swift */,
 				3E59D11B1F3900F600271D03 /* UIAlertController + Extensions.swift */,
 				3E59D11D1F39013900271D03 /* UIViewController + Extensions.swift */,
+				3E59D14F1F39941300271D03 /* UITableView + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -153,6 +169,7 @@
 		3ECDBF311F37CAB000C5ED51 /* WeatherListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3E59D14A1F3991B600271D03 /* SectionView */,
 				3ECDBF341F37CADB00C5ED51 /* WeatherListViewController.swift */,
 				3ECDBF3F1F38472000C5ED51 /* WeatherListCell.swift */,
 			);
@@ -285,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E59D1201F39054E00271D03 /* LaunchScreen.storyboard in Resources */,
+				3E59D14C1F3991C500271D03 /* SectionView.xib in Resources */,
 				3E59D11F1F39054800271D03 /* Main.storyboard in Resources */,
 				3EF603111F361E04005EED8F /* Assets.xcassets in Resources */,
 				3ECDBF3A1F37D4CE00C5ED51 /* HeaderView.xib in Resources */,
@@ -349,6 +367,7 @@
 				3E59D1431F39075400271D03 /* WeatherTest.xcdatamodeld in Sources */,
 				3ECDBF3E1F38470500C5ED51 /* MainNavigationController.swift in Sources */,
 				3E59D1491F39184300271D03 /* GlobalFunctions.swift in Sources */,
+				3E59D1501F39941300271D03 /* UITableView + Extensions.swift in Sources */,
 				3ECDBF331F37CAC600C5ED51 /* MapViewController.swift in Sources */,
 				3ECDBF251F37C50000C5ED51 /* AppDelegate.swift in Sources */,
 				3ECDBF261F37C50000C5ED51 /* Constants.swift in Sources */,
@@ -363,6 +382,7 @@
 				3ECDBF351F37CADB00C5ED51 /* WeatherListViewController.swift in Sources */,
 				3E59D11C1F3900F600271D03 /* UIAlertController + Extensions.swift in Sources */,
 				3ECDBF401F38472000C5ED51 /* WeatherListCell.swift in Sources */,
+				3E59D14E1F39928700271D03 /* SectionView.swift in Sources */,
 				3ECDBF2C1F37C50000C5ED51 /* MonthModel.swift in Sources */,
 				3ECDBF2D1F37C50000C5ED51 /* YearModel.swift in Sources */,
 				3ECDBF3C1F37D69600C5ED51 /* HeaderView.swift in Sources */,

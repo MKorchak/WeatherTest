@@ -10,15 +10,17 @@ import UIKit
 
 class WeatherListCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var tMaxLabel: UILabel!
+    @IBOutlet weak var tMinLabel: UILabel!
+    @IBOutlet weak var rainLabel: UILabel!
+    @IBOutlet weak var sunLabel: UILabel!
+    
+    func fill(from model: MonthModel) {
+        self.monthLabel.text = model.mm
+        self.tMaxLabel.text = model.tmax
+        self.tMinLabel.text = model.tmin
+        self.rainLabel.text = model.rain
+        self.sunLabel.text = model.sun
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
